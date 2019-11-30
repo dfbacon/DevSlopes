@@ -55,12 +55,12 @@
                                     <constraint firstAttribute="bottom" secondItem="Ada-Am-AIg" secondAttribute="bottom" constant="14" id="zj3-4D-PWc"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="hNx-NR-7dS">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="hNx-NR-7dS">
                                 <rect key="frame" x="0.0" y="65" width="375" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="NNC-i8-iD7"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Z37-Je-mCO">
                                 <rect key="frame" x="0.0" y="110" width="375" height="557"/>
@@ -139,6 +139,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="SLe-F8-Zux" id="hDR-qR-z3a"/>
+                        <outlet property="searchBar" destination="hNx-NR-7dS" id="pZr-b2-bJn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
